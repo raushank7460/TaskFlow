@@ -31,8 +31,9 @@
 // app.listen(PORT, () => {
 //   console.log(`Server port ${PORT} par chal raha hai`);
 // });
-const express = require("express");
 const dotenv = require("dotenv");
+const express = require("express");
+// const dotenv = require("dotenv");
 const cors = require("cors");
 const path = require("path");
 
@@ -41,7 +42,7 @@ const userRoute = require("./routes/userRoute");
 const taskRoute = require("./routes/taskRoute");
 const dashboardRoute = require("./routes/dashboardRoute");
 
-dotenv.config();
+ dotenv.config();
 
 const app = express();
 
