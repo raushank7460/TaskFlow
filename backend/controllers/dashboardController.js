@@ -1,9 +1,7 @@
 const Task = require("../models/taskModel");
 const User = require("../models/userModel");
 
-// @desc    Dashboard ka poora data ek saath
-// @route   GET /api/dashboard
-// @access  Private
+
 const getDashboard = async (req, res) => {
   try {
     const userId = req.user._id;
